@@ -1,7 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import Footer from "./Footer";
-import './Header.css'
+import './Header.css';
+import DisplayRecipie from "./DisplayRecipe";
 
 const Header = () =>{
 
@@ -16,7 +17,10 @@ const Header = () =>{
     var curr_year = today.getFullYear();
 
     today = m_names[curr_month] + " " + curr_date + "/ " + curr_year;
-
+    const refresh = () => {
+        //function for manually refresh page
+        window.location.reload();
+      };
     return(
         <div id="header">
             <div className="topbar">
@@ -55,19 +59,23 @@ const Header = () =>{
 
                         <div className="collapse navbar-collapse" id="navbartoggle">
                         <ul className="navbar-nav float-right">
-                            <li className="nav-item">
-                            <a className="nav-link" href="#"><i class="fa fa-home" aria-hidden="true"></i> Home </a>
+                            <li className="nav-item active">
+                            <Link to="/" className="nav-link"><i class="fa fa-home" aria-hidden="true"></i> Home</Link>
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link" href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i> Add Recipe</a>
-                            </li>               
+                                <Link to="/add" className="nav-link"><i class="fa fa-plus-square" aria-hidden="true"></i> Add Recipe</Link>
+                            
+                            </li>              
                         </ul>
                         </div>
                     </nav>
+                    
                     </div>
                 </div>
                 </div>  
+                
             </header>
+            
             <div class="card">
                 <div class="card-header">
                 </div>
@@ -77,8 +85,8 @@ const Header = () =>{
                 <nav className="nav">
                     <ul className="ul">
                         <center>
-                            <li className="li"><a class="active" href="#home">Home</a></li>
-                            <li className="li"><a href="#news"> Add Recipe </a></li>
+                        <li className="li"><Link className="active" to = "/">Home</Link></li>
+                        <li className="li"><Link to="/add">Add Recipe</Link></li>
                            
                         </center>
                      </ul>
@@ -91,7 +99,7 @@ const Header = () =>{
                         </div>
                         <div className="card-body">
                             <center>
-                                <h5 className="card-title">The Most Popular Food Recipe 🥘🥂</h5><br/>
+                                <h5 className="card-title" style={{fontFamily: "Copperplate, Papyrus, fantasy", fontSize:"25px"}}>Food Recipe 🥘🥂</h5><br/>
                                 <div class="row">
                                     <div class="col-lg-4 col-md-6">
                                         <div class="card">
@@ -160,11 +168,15 @@ const Header = () =>{
                             </center>
                         </div>
                     </div>
+                    <DisplayRecipie/>
 
                 </article>
+                
             </section>
-
-
+            <br/><br/>
+            <button style={{float:"right"}} className="btn btn-primary shadow-none" onClick={refresh}>
+            <i className="fa fa-refresh" aria-hidden="true"></i> Refresh
+          </button> <br/><br/><br/><br/>
 
         </div>
     )
