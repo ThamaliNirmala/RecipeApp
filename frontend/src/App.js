@@ -6,6 +6,8 @@ import {BrowserRouter,Routes,Route} from "react-router-dom";
 
 import Header from './Home/Header';
 import AddRecipe from './Home/AddRecipe';
+import List from './Home/List';
+import Update from './Home/Update';
 
 function App() {
 
@@ -32,7 +34,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Header/>} />
           <Route path="/add" element={<AddRecipe/>}/>
-          
+          <Route path="/edit-Recipe" element={<List/>}/>
+          <Route path="/edit-Recipe/:id/:recipeName/:ingredient/:description" element={<Update/>}/>
         </Routes>
         </BrowserRouter>
         <FaArrowCircleUp className="scrollTop" onClick={scrollTop} style={{height: 40, display: showScroll ? 'flex' : 'none'}}/>

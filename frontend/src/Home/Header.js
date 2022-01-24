@@ -102,9 +102,9 @@ const Header = () =>{
                                 <h5 className="card-title" style={{fontFamily: "Copperplate, Papyrus, fantasy", fontSize:"25px"}}>Food Recipe 🥘🥂</h5><br/>
                                 <div class="row">
                                     <div class="col-lg-4 col-md-6">
-                                        <div class="card">
+                                        <div class="card zoom">
                                             <div class="view overlay">
-                                                <img src="https://i.ibb.co/PQBfJzf/Hyderabadi-chicken-Biryani.jpg" class="card-img-top" alt=""/>
+                                                <img src="https://i.ibb.co/PQBfJzf/Hyderabadi-chicken-Biryani.jpg" style={{width:"250px"}} class="card-img-top" alt=""/>
                                                 <a href="#">
                                                 <div class="mask rgba-white-slight"></div>
                                                 </a>
@@ -112,9 +112,9 @@ const Header = () =>{
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6">
-                                        <div class="card">
+                                        <div class="card zoom">
                                             <div class="view overlay">
-                                                <img src="https://i.ibb.co/xGsVPwJ/200730-Soy-Sauce-Noodles-550.jpg" class="card-img-top" alt=""/>
+                                                <img src="https://i.ibb.co/xGsVPwJ/200730-Soy-Sauce-Noodles-550.jpg" style={{width:"250px"}} class="card-img-top" alt=""/>
                                                 <a href="#">
                                                 <div class="mask rgba-white-slight"></div>
                                                 </a>
@@ -122,9 +122,9 @@ const Header = () =>{
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6">
-                                        <div class="card">
+                                        <div class="card zoom">
                                             <div class="view overlay">
-                                                <img src="https://i.ibb.co/m4w5Lnb/ECk-S2-MDWw-AA86mv.jpg"  class="card-img-top" alt=""/>
+                                                <img src="https://i.ibb.co/m4w5Lnb/ECk-S2-MDWw-AA86mv.jpg" style={{width:"250px"}}  class="card-img-top" alt=""/>
                                                 <a href="#">
                                                 <div class="mask rgba-white-slight"></div>
                                                 </a>
@@ -134,9 +134,9 @@ const Header = () =>{
                                 </div><br/><br/>
                                 <div class="row">
                                     <div class="col-lg-4 col-md-6">
-                                        <div class="card">
+                                        <div class="card zoom">
                                             <div class="view overlay">
-                                                <img src="https://i.ibb.co/kJyf70J/Chicken-Fried-Rice-square-FS.jpg" class="card-img-top" alt=""/>
+                                                <img src="https://i.ibb.co/kJyf70J/Chicken-Fried-Rice-square-FS.jpg" style={{width:"250px"}} class="card-img-top" alt=""/>
                                                 <a href="#">
                                                 <div class="mask rgba-white-slight"></div>
                                                 </a>
@@ -144,9 +144,9 @@ const Header = () =>{
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6">
-                                        <div class="card">
+                                        <div class="card zoom">
                                             <div class="view overlay">
-                                                <img src="https://i.ibb.co/tHQyfj8/hakka-noodles-recipe.jpg" class="card-img-top" alt=""/>
+                                                <img src="https://i.ibb.co/tHQyfj8/hakka-noodles-recipe.jpg" style={{width:"250px"}} class="card-img-top" alt=""/>
                                                 <a href="#">
                                                 <div class="mask rgba-white-slight"></div>
                                                 </a>
@@ -154,9 +154,9 @@ const Header = () =>{
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6">
-                                        <div class="card">
+                                        <div class="card zoom">
                                             <div class="view overlay">
-                                                <img src="https://i.ibb.co/jzXHdCy/Chicken-Rice-Casserole-8.jpg"  class="card-img-top" alt=""/>
+                                                <img src="https://i.ibb.co/jzXHdCy/Chicken-Rice-Casserole-8.jpg" style={{width:"250px"}}  class="card-img-top" alt=""/>
                                                 <a href="#">
                                                 <div class="mask rgba-white-slight"></div>
                                                 </a>

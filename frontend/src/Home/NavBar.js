@@ -62,7 +62,7 @@ const NavBar = () =>{
                             <li className="nav-item">
                             <Link to="/" className="nav-link"><i class="fa fa-home" aria-hidden="true"></i> Home</Link>
                             </li>
-                            <li className="nav-item active">
+                            <li className="nav-item">
                                 <Link to="/add" className="nav-link"><i class="fa fa-plus-square" aria-hidden="true"></i> Add Recipe</Link>
                             
                             </li>             

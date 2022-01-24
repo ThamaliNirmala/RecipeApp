@@ -3,6 +3,7 @@ import axios from 'axios';
 import Table from 'react-bootstrap/Table';
 import TableRow from './TableRow';
 import {Link} from "react-router-dom";
+import NavBar from "./NavBar";
 export default class tList extends Component {
 
   constructor(props) {
@@ -33,14 +34,19 @@ export default class tList extends Component {
 
   render() {
     return (
-        <div className=" stockImage">
-          <div className="table-wrapper container ">
-              <Table striped bordered hover style={{background:"#000000" , padding:"20px 20px 20px 20px" , opacity:"0.9"}}>
+        <div>
+          <NavBar/>
+          <section>
+                <article className="article">
+                    <center>
+                        <div className="container" style={{width:"100%"}}>
+                        <div className="table-wrapper container ">
+              <Table striped bordered hover >
                   <thead>
                       <tr>
-                          <th style={{color:"white"}}>Recipe Name</th>
-                          <th style={{color:"white"}}>Ingredient</th>
-                          <th style={{color:"white"}}>Description</th>
+                          <th style={{color:"black"}}>Recipe Name</th>
+                          <th style={{color:"black"}}>Ingredient</th>
+                          <th style={{color:"black"}}>Description</th>
                       </tr>
                   </thead>
                   <tbody>
@@ -49,6 +55,11 @@ export default class tList extends Component {
               </Table>
           </div>
           <br/><br/>
+                        </div>
+                    </center>
+                </article>
+            </section>
+          
         </div>
     );
   }

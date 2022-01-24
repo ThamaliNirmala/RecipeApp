@@ -56,7 +56,7 @@ export default class DisplayRecipie extends React.Component {               //cr
     return (
     
        <div className="App"><br/>
-         <h1 style ={{color:"#171717", textAlign: "center"}}>All Recipies</h1>  <br></br>          {/*get the data*/ }
+         <h1 style={{fontFamily: "Copperplate, Papyrus, fantasy", fontSize:"50px"}}> All Recipies 🍝🍜🍹</h1>  <br></br>          {/*get the data*/ }
    
    
          {/* Display data from API */}
@@ -68,7 +68,7 @@ export default class DisplayRecipie extends React.Component {               //cr
            ):(this.state.filteredData.map)(i => 
            
               <p>
-                 <div className="student" style={{background:"#DCDCDC", width:"350px"}}>
+                 <div className="student" style={{background:"#DCDCDC", width:"650px", marginLeft:"50px"}}>
                    
    
                    <div className="details">
@@ -76,15 +76,15 @@ export default class DisplayRecipie extends React.Component {               //cr
                        <div style={{float:"right"}}>
                          
                        </div>
-                       <p >🥘<b style={{color:"red"}}>Recipe Name  : </b>{i.recipeName}</p>
-                       <p >🍲<b style={{color:"green"}}>Ingredients : </b>{i.ingredient} </p>
-                       <p >📋<b style={{color:"blue"}}>Description  : </b>{i.description} </p>
+                       <p >🥘<b style={{color:"red"}}>Recipe Name  : </b><br/>{i.recipeName}</p>
+                       <p >🍲<b style={{color:"green"}}>Ingredients : </b><br/>{i.ingredient} </p>
+                       <p >📋<b style={{color:"blue"}}>Description  : </b><br/>{i.description} </p>
                        
                        
                        
                      </div>
                    
-                     <a href="/edit"><button className="btn btn-dark">Edit</button></a>
+                     <a href="/edit-Recipe"><button className="btn btn-dark">Edit</button></a>
                      <> </>
                      
                      
