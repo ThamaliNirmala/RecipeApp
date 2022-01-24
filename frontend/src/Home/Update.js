@@ -110,7 +110,7 @@ export default class Edit extends Component {
 
                     <br/>
                     <Button variant="danger" size="lg" block="block" type="submit">
-                    <i className="fa fa-paper-plane-o" aria-hidden="true"></i> Update Assistant
+                    <i className="fa fa-paper-plane-o" aria-hidden="true"></i> Update Recipe
                     </Button>
                 </Form><br/>
                 </div><br/><br/>
